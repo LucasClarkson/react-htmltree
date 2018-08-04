@@ -54,7 +54,7 @@ export default class Container extends Component {
         <div className="Container__Nodes">
           <Node node={root} update={::this.onUpdate} onHover={onHover} customRender={customRender}/>
         </div>
-        <input className="Container__Input" type="text" ref={(input) => { this.input = input; }} />
+        <input className="Container__Input" type="text" ref={(input) => { this.input = input; }}
           onFocus={::this.toggleFocus}
           onBlur={::this.toggleFocus}
         />

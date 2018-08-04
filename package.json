@@ -61,7 +61,9 @@
   },
   "scripts": {
     "build": "NODE_ENV=production node build",
+    "build-windows": "set NODE_ENV=production && node build",
     "check": "npm outdated -depth 0",
-    "dev": "NODE_ENV=Development node build"
+    "dev": "NODE_ENV=Development node build",
+    "dev-windows": "set NODE_ENV=Development && node build"
   }
 }
